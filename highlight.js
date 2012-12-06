@@ -17,7 +17,7 @@ jQuery.fn.highlight = function(pat) {
     //Based on Underscore's implementation for isArray method.
     var _isArrayInner = Array.isArray ||
     function(obj) {
-        return toString.call(obj) == '[object Array]';
+        return Object.prototype.toString.call(obj) == '[object Array]';
     };
 
     function isArray(obj) {
